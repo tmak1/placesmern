@@ -24,7 +24,7 @@
 .nav-links a:hover,
 .nav-links a:active,
 .nav-links a.active {
-  background: #f8df00;
+  background: #8bbee8ff;
   border-color: #292929;
   color: #292929;
 }
@@ -67,10 +67,10 @@
     color: white;
     background: transparent;
   }
-  
+
   .nav-links button:hover,
   .nav-links button:active {
-    background: #f8df00;
+    background: #8bbee8ff;
     color: #292929;
   }
 }
