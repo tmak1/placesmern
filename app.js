@@ -50,7 +50,8 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.resolve(__dirname, 'client', 'build')));
 }
 app.use('/*', (req, res, next) => {
-  res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  res.json({ msg: 'MDANIR PUTA KUTTAR BAICHA' });
+  //res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
 });
 
 db()
