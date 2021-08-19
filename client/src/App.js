@@ -59,16 +59,16 @@ function App() {
       </Switch>
     );
   }
-  useEffect(() => {
-    (async () => {
-      try {
-        const data = await sendRequest(
-          `${process.env.REACT_APP_API_URL}/googleApiKey`
-        );
-        // setGoogleApiKey(data.apiKey); //not secure
-      } catch (error) {}
-    })();
-  }, [sendRequest]);
+  // useEffect(() => {
+  //   (async () => {
+  //     try {
+  //       const data = await sendRequest(
+  //         `${process.env.REACT_APP_API_URL}/googleApiKey`
+  //       );
+  //       // setGoogleApiKey(data.apiKey); //not secure
+  //     } catch (error) {}
+  //   })();
+  // }, [sendRequest]);
   return (
     <div className="App">
       <AuthContext.Provider
@@ -77,13 +77,13 @@ function App() {
         <Router>
           <Helmet>
             <title>Places</title>
-            {googleApiKey && googleApiKey.length > 0 && (
+            {/* {googleApiKey && googleApiKey.length > 0 && (
               <script
                 src={`https://maps.googleapis.com/maps/api/js?key=${googleApiKey}`}
                 async
                 defer
               ></script>
-            )}
+            )} */}
             <meta name="description" content="A Places to visit app" />
             <meta name="author" content="Tarik Khan" />
           </Helmet>
